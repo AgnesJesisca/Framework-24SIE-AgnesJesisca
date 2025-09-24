@@ -82,8 +82,8 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1 class="display-6 mb-2">Welcome Aboard!</h1>
-            <p class="lead mb-0">A simple and elegant app using Bootstrap 5 and Laravel Blade.</p>
+            <h1 class="display-6 mb-2">{{ $username }}</h1>
+            <p class="lead mb-0">{{ $last_login }}</p>
         </div>
     </section>
 
