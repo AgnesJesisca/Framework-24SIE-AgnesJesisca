@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MahasiswaController;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -10,6 +13,7 @@ Route::get('/pcr', function () {
 });
 Route::get('/mahasiswa/{param1}', [MahasiswaController::class, 'show']) ->name('mahasiswa.show');
 
+Route::get('/home',[HomeController::class,'index']);
 
 Route::get('/nama/{param1?}', function ($param1 = '') {
     return 'Nama saya: '.$param1;
